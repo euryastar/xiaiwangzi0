@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小王子 - 永恒的童话</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        :root { --primary: #FFD166; --secondary: #118AB2; --accent: #EF476F; --dark: #073B4C; --light: #F8F9FA; }
+        html { scroll-behavior: smooth; }
+        body { background-color: var(--light); color: var(--dark); line-height: 1.6; }
+        
+        header { position: fixed; top: 0; width: 100%; background: rgba(255,255,255,0.95); z-index: 1000; padding: 1rem 5%; }
+        .navbar { display: flex; justify-content: space-between; align-items: center; max-width: 1400px; margin: 0 auto; }
+        .logo { display: flex; align-items: center; font-weight: 700; font-size: 1.5rem; color: var(--dark); text-decoration: none; }
+        .logo i { color: var(--primary); margin-right: 0.5rem; }
+        .nav-links { display: flex; list-style: none; }
+        .nav-links li { margin-left: 2rem; }
+        .nav-links a { text-decoration: none; color: var(--dark); font-weight: 500; padding: 0.5rem 0; }
+        .nav-links a:hover { color: var(--secondary); }
+        
+        main { margin-top: 80px; }
+        section { padding: 5rem 10%; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; }
+        section h2 { font-size: 2.5rem; margin-bottom: 2rem; color: var(--dark); }
+        
+        #home { background: linear-gradient(135deg, #118AB2, #073B4C); color: white; text-align: center; }
+        .hero-content { max-width: 800px; margin: 0 auto; }
+        .hero-content h1 { font-size: 3.5rem; margin-bottom: 1.5rem; color: var(--primary); }
+        .quote { font-style: italic; margin-top: 2rem; padding: 1.5rem; border-left: 4px solid var(--primary); background: rgba(255,255,255,0.1); }
+        
+        #intro { background: white; }
+        .intro-content { display: flex; align-items: center; gap: 3rem; }
+        
+        #origin { background: #f8f9fa; }
+        .origin-content { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
+        
+        #contents { background: white; }
+        .chapters { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+        .chapter-card { background: white; border-radius: 8px; padding: 1.5rem; box-shadow: 0 5px 15px rgba(0,0,0,0.05); border-left: 4px solid var(--primary); }
+        .chapter-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        
+        #easter-egg { background: linear-gradient(135deg, #FFD166, #EF476F); color: var(--dark); text-align: center; }
+        .fox-quote { background: rgba(255,255,255,0.8); padding: 2rem; border-radius: 10px; margin: 2rem 0; font-style: italic; }
+        
+        footer { background: var(--dark); color: white; text-align: center; padding: 2rem; }
+        
+        @media (max-width: 768px) {
+            .navbar { flex-direction: column; }
+            .nav-links { margin-top: 1rem; flex-wrap: wrap; justify-content: center; }
+            .nav-links li { margin: 0.5rem 1rem; }
+            .hero-content h1 { font-size: 2.5rem; }
+            section h2 { font-size: 2rem; }
+ .nav-links a.active {
+       color: #118AB2 !important;
+       background-color: rgba(17, 138, 178, 0.1) !important;
+       border-radius: 4px !important;
+       font-weight: 700 !important;
+       transform: scale(1.05) !important;
+       transition: all 0.3s ease !important;
+}  
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href=" " class="logo"><i class="fas fa-star"></i>小王子</a >
+            <ul class="nav-links">
+                <li><a href="#intro">书本简介</a ></li>
+                <li><a href="#origin">作品由来</a ></li>
+                <li><a href="#contents">目录</a ></li>
+                <li><a href="#easter-egg">彩蛋</a ></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="hero-content">
+                <h1>小王子</h1>
+                <p>安东尼·德·圣-埃克苏佩里 著</p >
+                <p>一部写给大人的童话，关于爱、责任与生命的真谛</p >
+                <div class="quote">"所有的大人都曾经是小孩，虽然，只有少数的人记得。"</div>
+            </div>
+        </section>
+
+        <section id="intro">
+            <h2>书本简介</h2>
+            <div class="intro-content">
+                <div class="intro-text">
+                    <p>《小王子》是法国作家安东尼·德·圣-埃克苏佩里于1942年写成的著名儿童文学短篇小说。</p >
+                    <p>作者以小王子的孩子式的眼光，透视出成人的空虚、盲目和愚妄，用浅显天真的语言写出了人类的孤独寂寞。</p >
+                    <p>《小王子》是一部童话般的短篇小说，讲述了一位飞行员因飞机故障降落在撒哈拉沙漠后，遇见了一位来自其他星球的小王子的故事。小王子讲述了他在宇宙中不同星球的旅行经历，遇见了形形色色的人：国王、虚荣者、酒鬼、商人……每个角色都象征着某种人性特质。通过小王子天真纯净的视角，这本书探讨了爱、孤独、责任和人生的意义。</p>
+
+                </div>
+                <div class="intro-image">
+                    
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="origin">
+            <h2>作品由来</h2>
+            <div class="origin-content">
+                <div class="origin-text">
+                    <p>小王子
+《The Little Prince》
+玫瑰的原型是作者(法国飞行员一Antoine de Saint- Exupéry)的妻子，他们彼此相爱却又互相折磨，玫瑰的任性高傲让他怀疑自己是否爱她，于是小王子决定离开。玫瑰没有挽留只是表达了爱意，坚强独立地活着;小狐狸的原型是他的红颜知己，她让小王子明白自己内心深爱着玫瑰，但小狐狸依然让小王子驯服了她，产生了羁绊，并成为了她的独一无二，狐狸最后选择放手让小王子回到玫瑰的身边。
+小狐狸说“如果你四点要来，那么我从三点开始就感到幸福了”每个人都想成为小王子心口那株独一无二的玫瑰，可最后人人都成了明知结局是意难平，却心甘情愿被驯服的小狐狸。
+作者在文末写上“我知道他返回了他的星球，因为天亮时我并没有找到他的尸体”我也无法确定小王子是回了他的星球，死去了或者是继续了他的冒险--当然我不会告诉自己小王子死去了，不论是因为我对法国浪漫文学的喜爱还是我Happy Ending的向往。
+现实中，他是个浪漫的飞行员，1944年他在执行任务时在地中海上空失踪，成为一则神秘传奇。
+2022年6月，圣·埃克苏佩里与妻子康苏爱萝的情书通信以《小王子的情书集》为名结集出版。</p>
+ <section id="contents">
+          <h2>目录</h2>
+          <p>以下是《小王子》的主要内容：</p >
+          <div class="chapters">
+          <div class="chapters-card">
+                <h3>01 邂逅小王子</h3>
+          </div>
+          <div class="chapters-card">
+                <h3>02 B612号星球</h3>
+          </div>
+          <div class="chapters-card">
+                <h3>03 四十四次日落</h3>
+          </div>
+          <div class="chapters-card">
+                <h3>04 那朵花</h3>
+          </div>
+          <div class="chapters-card">
+                <h3>05 请你驯养我</h3>
+          </div>
+          <div class="chapters-card">
+                <h3>06 用心寻找</h3>
+          </div>
+</section>
+
+<section id="easter-egg">
+    <h2>彩蛋</h2>
+    <div class="egg-content">
+        <h3>发现《小王子》的隐藏秘密</h3>
+        
+        <!-- 狐狸名言 -->
+        <div class="fox-quote">
+            "对我来说，你还只是一个小男孩，就像其他千万个小男孩一样。我不需要你。你也同样用不着我。对你来说，我也不过是一只狐狸，和其他千万只狐狸一样。但是，如果你驯服了我，我们就互相不可缺少了。对我来说，你就是世界上唯一的了；我对你来说，也是世界上唯一的了。"
+        </div>
+        
+       
+        <!-- 交互彩蛋 1 -->
+        <div class="interactive-element" onclick="revealSecret()">
+            <h3><i class="fas fa-key"></i>小王子为什么要回到自己的星球？</h3>
+            <p id="secret-text" style="display:none; margin-top:1rem; text-align: left; padding: 1rem; background: rgba(255,255,255,0.8); border-radius: 8px; border-left: 4px solid var(--accent);">
+                <strong>他想要回到他的玫瑰身边，因为他爱他的玫瑰，并且对它负有责任。</strong><br>
+               
+            </p >
+        </div>
+        
+        <!-- 交互彩蛋 2 -->
+        <div class="interactive-element" onclick="revealSecondSecret()" style="margin-top: 1.5rem;">
+            <h3><i class="fas fa-star"></i>你会为你付出的真心而感到后悔吗?</h3>
+            <p id="second-secret" style="display:none; margin-top:1rem; text-align: left; padding: 1rem; background: rgba(255,255,255,0.8); border-radius: 8px; border-left: 4px solid var(--primary);">
+                <strong>也许世界上有5000朵和你一模一样的花，但只有你是我独一无二的玫瑰。如果你下午4点钟来，那么从3点钟起我就开始感到幸福。想要和他人制造羁绊，就要承担掉眼泪的风险。我们不怕掉眼泪，但是要值得。</strong><br>
+               
+            </p >
+        </div>
+
+           </div>
+</section>
+<script>
+         // 平滑滚动功能
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+
+    // 彩蛋交互功能
+    function revealSecret() {
+        const secretText = document.getElementById('secret-text');
+        if (secretText.style.display === 'none') {
+            secretText.style.display = 'block';
+        } else {
+            secretText.style.display = 'none';
+        }
+    }
+
+    function revealSecondSecret() {
+        const secondSecret = document.getElementById('second-secret');
+        if (secondSecret.style.display === 'none') {
+            secondSecret.style.display = 'block';
+        } else {
+            secondSecret.style.display = 'none';
+        }
+    }
+
+    // 导航栏高亮功能
+    window.addEventListener('scroll', function() {
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-links a');
+        
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            if (scrollY >= (sectionTop - 200)) {
+                current = section.getAttribute('id');
+            }
+        });
+        
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').substring(1) === current) {
+                link.classList.add('active');
+            }
+        });
+    });
+</script>
+</body>
+</html>
